@@ -13,7 +13,7 @@ namespace FoodDelivery.DAL.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
-
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
         public DbSet<Restaurant> Restaurants { get; set; }
         public DbSet<MenuItem> MenuItems { get; set; }
         public DbSet<Category> Categories { get; set; }
